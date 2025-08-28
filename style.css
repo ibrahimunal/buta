@@ -7,7 +7,7 @@
   
   body {
     color: #333;
-    background: #fff;
+    background-color: #fff7e6 !important;
     line-height: 1.6;
   }
   
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #27ae60;
+    background: #D9CAAD;
     color: white;
     padding: 15px 20px;
     position: sticky;
@@ -24,10 +24,12 @@
     z-index: 1000;
   }
   
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+  .logo img {
+    max-height: 86px;   /* controls height inside header */
+    height: auto;       /* keeps aspect ratio */
+    width: auto;        /* auto-scale width */
   }
+  
   
   .desktop-nav {
     display: flex;
@@ -35,7 +37,7 @@
   }
   
   .desktop-nav a {
-    color: white;
+    color: #595347;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -58,7 +60,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #2ecc71;
+    background: #D9CAAD;
+    color: #595347;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -66,17 +69,18 @@
   }
   
   #sideMenu a {
+    margin-top: 8px;;
     padding: 12px 20px;
     display: block;
-    color: white;
+    color: #595347;
     text-decoration: none;
     font-size: 18px;
     transition: background 0.3s;
   }
   
   #sideMenu a:hover {
-    background: #f1c40f;
-    color: black;
+    background: #DFBA70;
+    color: #595347;
   }
   
   .closeBtn {
@@ -99,7 +103,7 @@
   }
   
   .hero {
-    background: url('assets/buta.jpg') no-repeat center/cover;
+    background: url('assets/carousel/10.JPG') no-repeat center/cover;
     height: 90vh;
     display: flex;
     align-items: flex-start; /* align content to top */
@@ -149,7 +153,7 @@
   }
   
   .section h2 {
-    color: #27ae60;
+    color: #595347;
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -181,7 +185,7 @@
   
   /* Footer */
   footer {
-    background: #27ae60;
+    background: #D9CAAD;
     color: white;
     text-align: center;
     padding: 20px;
@@ -249,4 +253,31 @@
   .select-items.show {
     display: block;
   }
+  
+
+  #gallery {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+    background-color: #fff7e6;
+    padding: 40px 20px;
+  }
+  #gallery .carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-wrapper {
+    width: 70%;          /* Set carousel width to 70% */
+    margin: 0 auto;      /* Center horizontally */
+  }
+  
+  .carousel-img {
+    width: 100%;         /* Image takes full width of carousel container */
+    height: auto;        /* Maintain aspect ratio */
+    object-fit: cover;   /* Optional: crop/fill nicely */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Optional: shadow around images */
+  }
+  
   
