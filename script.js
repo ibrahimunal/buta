@@ -91,6 +91,9 @@ const translations = {
   },
 };
 
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
 // Change language function
 function changeLanguage(lang) {
   const t = translations[lang];

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buta Baku Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buta Baku Restaurant</title>
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
 <body>
   <!-- Header -->
   <header>
@@ -26,14 +38,15 @@
 
     <!-- Language Selector -->
     <div class="custom-select">
-      <div class="select-selected">🇬🇧 English</div>
+      <div class="select-selected">🇹🇷</div>
       <div class="select-items select-hide">
-        <div data-lang="en">🇬🇧 English</div>
-        <div data-lang="tr">🇹🇷 Türkçe</div>
-        <div data-lang="az">🇦🇿 Azərbaycan</div>
-        <div data-lang="ru">🇷🇺 Русский</div>
+        <div data-lang="en">🇬🇧</div>
+        <div data-lang="tr">🇹🇷</div>
+        <div data-lang="az">🇦🇿</div>
+        <div data-lang="ru">🇷🇺</div>
       </div>
     </div>
+    
 
     <!-- Hamburger Menu (Mobile) -->
     <div class="hamburger" onclick="openMenu()">&#9776;</div>
@@ -70,12 +83,15 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section" style="padding: 60px;;">
     <h2 id="about-title">About Us</h2>
-    <p id="about-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-Buta Baku Restoran, 100 dönüm yeşil alana sahip bir arazide Azerbaycan yöresel yemekleri konseptinde hizmet verir. Keyifle vakit geçirebileceğiniz, şehrin karmaşasından kadar uzaktır. Sadece tarafımızca üretilen zeytinyağı ile mevsimine özel doğal ürünlerden menüler hazırlarız.
- 
-Sizi şehir hayatının yoğunluğundan bir nefes almaya davet eden, doğasıyla Ankara’nın en güzel yeşil alanlarından biri olan Haydar Aliyev Anıt Parkı’nın içinde konumlanan Buta Azerbaycan Restoranı ile kültür, sanat etkinliklerini ve Azerbaycan’ın dillere destan lezzetlerini doğal manzaraya karşı tadın!    </p>
+    <p id="about-text" style="">
+      Ankara’nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.
+      Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan’ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. Bu unutulmaz yolculuğu ise sadece bizde bulabileceğiniz Buta Ballı ve Bakü Baklavası gibi özel tatlılarla taçlandırıyoruz. Her lokma, şeflerimizin incelikli dokunuşlarıyla damaklarda iz bırakıyor.
+      Seçkin şarap kavımız, yerel kadın üreticilerin emekleriyle üretilen özel şaraplardan ve Türkiye’nin saygın bağlarının seçkin etiketlerinden oluşuyor. Bunun yanında, Azerbaycan Savalan şarap serisini de yalnızca Buta Bakü kavında bulabilirsiniz. Bu ayrıcalıklı lezzetleri, özenle hazırlanmış imza kokteyllerimizle birlikte şömine başında deneyimleyebilir, kendinizi unutulmaz bir atmosferin içinde bulabilirsiniz.
+      Buta Bakü sadece bir restoran değil, kültür ve zarafetin buluşma noktasıdır. Geleneksel müziklerden sanat etkinliklerine, film gösterimlerinden kültürel seminerlere uzanan programlarımızla, her ziyareti benzersiz kılıyoruz.
+      Şehrin kalabalığından uzak, doğanın ortasında, şöminenin sıcaklığı ve parkın dinginliği eşliğinde; Azerbaycan kültürünün sofistike dokunuşlarıyla tanışmaya davetlisiniz.
+      Buta Bakü Restoran – Damaklarda, ruhlarda ve hafızalarda iz bırakan bir deneyim.  </p>
   </section>
 
   <!-- Gallery Section -->
@@ -92,111 +108,136 @@ Sizi şehir hayatının yoğunluğundan bir nefes almaya davet eden, doğasıyla
   <!-- Gallery Section -->
 <!-- Gallery Section -->
 <section id="gallery" class="section">
-  <h2 id="gallery-title">Gallery</h2>
+  <h2 id="gallery-title" style="text-align: center; margin-bottom: 30px;">Gallery</h2>
 
-  <div id="butaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="3"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="4"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="5"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="6"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="7"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="8"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="9"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="10"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="11"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="12"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="13"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="14"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="15"></button>
-      <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="16"></button>
+  <div class="carousel-wrapper">
+    <div id="butaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="9"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="10"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="11"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="12"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="13"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="14"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="15"></button>
+        <button type="button" data-bs-target="#butaCarousel" data-bs-slide-to="16"></button>
+      </div>
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="assets/carousel/1.jpg" class="carousel-img" alt="Buta Baku 1"></div>
+        <div class="carousel-item"><img src="assets/carousel/2.JPG" class="carousel-img" alt="Buta Baku 2"></div>
+        <div class="carousel-item"><img src="assets/carousel/3.jpg" class="carousel-img" alt="Buta Baku 3"></div>
+        <div class="carousel-item"><img src="assets/carousel/4.JPG" class="carousel-img" alt="Buta Baku 4"></div>
+        <div class="carousel-item"><img src="assets/carousel/5.JPG" class="carousel-img" alt="Buta Baku 5"></div>
+        <div class="carousel-item"><img src="assets/carousel/6.jpg" class="carousel-img" alt="Buta Baku 6"></div>
+        <div class="carousel-item"><img src="assets/carousel/7.jpg" class="carousel-img" alt="Buta Baku 7"></div>
+        <div class="carousel-item"><img src="assets/carousel/8.jpg" class="carousel-img" alt="Buta Baku 8"></div>
+        <div class="carousel-item"><img src="assets/carousel/9.JPG" class="carousel-img" alt="Buta Baku 9"></div>
+        <div class="carousel-item"><img src="assets/carousel/10.JPG" class="carousel-img" alt="Buta Baku 10"></div>
+        <div class="carousel-item"><img src="assets/carousel/11.jpg" class="carousel-img" alt="Buta Baku 11"></div>
+        <div class="carousel-item"><img src="assets/carousel/12.jpg" class="carousel-img" alt="Buta Baku 12"></div>
+        <div class="carousel-item"><img src="assets/carousel/13.jpg" class="carousel-img" alt="Buta Baku 13"></div>
+        <div class="carousel-item"><img src="assets/carousel/14.jpg" class="carousel-img" alt="Buta Baku 14"></div>
+        <div class="carousel-item"><img src="assets/carousel/15.jpg" class="carousel-img" alt="Buta Baku 15"></div>
+        <div class="carousel-item"><img src="assets/carousel/16.jpg" class="carousel-img" alt="Buta Baku 16"></div>
+        <div class="carousel-item"><img src="assets/carousel/17.jpg" class="carousel-img" alt="Buta Baku 17"></div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#butaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#butaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
     </div>
-
-    <!-- Carousel Inner -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/carousel/1.jpg" class="d-block w-100" alt="Buta Baku 1">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/2.JPG" class="d-block w-100" alt="Buta Baku 2">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/3.jpg" class="d-block w-100" alt="Buta Baku 3">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/4.JPG" class="d-block w-100" alt="Buta Baku 4">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/5.JPG" class="d-block w-100" alt="Buta Baku 5">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/6.jpg" class="d-block w-100" alt="Buta Baku 6">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/7.jpg" class="d-block w-100" alt="Buta Baku 7">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/8.jpg" class="d-block w-100" alt="Buta Baku 8">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/9.JPG" class="d-block w-100" alt="Buta Baku 9">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/10.JPG" class="d-block w-100" alt="Buta Baku 10">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/11.jpg" class="d-block w-100" alt="Buta Baku 11">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/12.jpg" class="d-block w-100" alt="Buta Baku 12">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/13.jpg" class="d-block w-100" alt="Buta Baku 13">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/14.jpg" class="d-block w-100" alt="Buta Baku 14">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/15.jpg" class="d-block w-100" alt="Buta Baku 15">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/16.jpg" class="d-block w-100" alt="Buta Baku 16">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/carousel/17.jpg" class="d-block w-100" alt="Buta Baku 17">
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#butaCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#butaCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
   </div>
 </section>
 
 
+<footer style="background-color: #D9CAAD; color: #595347; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
+  <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: center;">
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2 id="contact-title">Contact Us</h2>
-    <p id="contact-address"><strong>Address:</strong> Cinnah Caddesi No:37, Ankara, Turkey</p>
-    <p id="contact-phone"><strong>Phone:</strong> +90 312 466 05 05</p>
-    <p id="contact-email"><strong>Email:</strong> info@butabaku.com</p>
-  </section>
+    <!-- Logo / Icon Section -->
+    <div class="footer-logo" style="flex: 1; min-width: 250px; display: flex; align-items: center; gap: 20px; justify-content: center;">
+      <div>
+        <img src="assets/logo/butalogo.png" alt="Buta Baku Logo" style="width: 190px; display: block;   filter: brightness(0) saturate(100%) invert(24%) sepia(6%) saturate(458%) hue-rotate(300deg) brightness(77%) contrast(91%);">
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Buta Baku Restaurant. All rights reserved.</p>
-  </footer>
+    <!-- Contact Info Section -->
+    <div class="footer-contact" style="flex: 1; min-width: 200px;">
+      <p style="margin: 0; display: flex; align-items: center; justify-content: center;">
+        <i class="fas fa-phone-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> 
+        <a href="tel:+903122515859" style="color: #595347; text-decoration: none;">+90 312 251 58 59</a>
+      </p>      
+      <p style="margin: 0; display: flex; align-items: center; justify-content: center;">
+        <i class="fas fa-phone-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> 
+        <a href="tel:+905551443020" style="color: #595347; text-decoration: none;">+90 555 144 30 20</a>
+      </p>     
+       <p style="margin: 5px 0; display: flex; align-items: center;"><i class="fas fa-map-marker-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> Haydar Haliyev Parkı, Uğur Mumcu Mahallesi, Ankara</p>
+    </div>
+
+    <!-- Social Media & Google Maps Section -->
+    <div class="footer-social" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center;">
+      <p style="margin-bottom: 10px; font-weight: 600;">Follow Us</p>
+      <div style="display: flex; gap: 15px; margin-bottom: 10px;">
+        <a href="https://www.instagram.com/butabakuankara/" target="_blank" style="color: #595347; text-decoration: none;">
+          <i class="fab fa-instagram" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://www.facebook.com/butabakurestoran/?locale=tr_TR" target="_blank" style="color: #595347; text-decoration: none;">
+          <i class="fab fa-facebook" style="font-size: 24px;"></i>
+        </a>
+      </div>
+      <a href="https://www.google.com/maps/place/Haydar+Haliyev+Park%C4%B1,+U%C4%9Fur+Mmucu+Mahallesi,+06370+Yenimahalle,+Ankara,+T%C3%BCrkiye" target="_blank" style="color: #595347; text-decoration: none; font-size: 14px; display: flex; align-items: center;">
+        <i class="fas fa-map-marked-alt" style="color: #595347; font-size: 20px; margin-right: 5px;"></i> Google Haritalar'da Görüntüle
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div id="copyright" style="text-align: center; margin-top: 30px; font-size: 12px; font-weight: 300;">
+    &copy; <span id="year"></span> Buta Baku Restaurant | Tüm Hakları Saklıdır
+  </div>
+
+  <style>
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      .footer-logo,
+      .footer-contact,
+      .footer-social {
+        text-align: center;
+        align-items: center;
+      }
+      .footer-contact p,
+      .footer-social a {
+        justify-content: center;
+      }
+    }
+  </style>
+</footer>
+
+
+
 
   <script src="script.js"></script>
 </body>
