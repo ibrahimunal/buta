@@ -1,0 +1,158 @@
+{
+  "en": {
+    "title": "Buta Baku Restaurant",
+    "nav": {
+      "menu": "Menu",
+      "about": "About",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "alt": {
+      "logo": "Buta Baku Logo"
+    },
+    "hero": {
+      "title": "Welcome to Buta Baku",
+      "cta": "View Menu"
+    },
+    "about": {
+      "title": "About",
+      "buta": {
+        "title": "Buta",
+        "description": "Located in the heart of Ankara, within the 100-acre green Haydar Aliyev Memorial Park, Buta Baku Restaurant brings together the unique flavors of Azerbaijani cuisine, cultural riches, and an exclusive atmosphere. We prepare Azerbaijan's legendary dishes on our menu, such as Pomegranate Glazed Lamb, Shah Pilaf, Dovga and Dushbara Soup, Lule Kebab; using only natural products collected in season and our own produced olive oil."
+      },
+      "promo": {
+        "title": "Promotion",
+        "description": "Buta Baku serves you with its modern architecture and wide product range. We offer you the best experience with our products prepared with quality materials and master craftsmanship."
+      },
+      "watchVideo": "Watch Promo Video",
+      "readMore": "Read More",
+      "expandedTitle": "Branch Name"
+    },
+    "gallery": {
+      "title": "Gallery"
+    },
+    "footer": {
+      "address": "Haydar Aliyev Park, Ugur Mumcu District, Ankara",
+      "follow": "Follow Us",
+      "viewOnMaps": "View on Google Maps",
+      "copyright": "Buta Baku Restaurant | All Rights Reserved"
+    }
+  },
+  "tr": {
+    "title": "Buta Bakü Restoran",
+    "nav": {
+      "menu": "Menü",
+      "about": "Hakkımızda",
+      "gallery": "Galeri",
+      "contact": "İletişim"
+    },
+    "alt": {
+      "logo": "Buta Bakü Logosu"
+    },
+    "hero": {
+      "title": "Buta Bakü'ye Hoş Geldiniz",
+      "cta": "Menüyü Gör"
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "buta": {
+        "title": "Buta",
+        "description": "Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor. Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz."
+      },
+      "promo": {
+        "title": "Tanıtım",
+        "description": "Buta Baku'nün modern mimarisi ve geniş ürün yelpazesiyle hizmetinizde. Kaliteli malzemeler ve usta işçilikle hazırlanan ürünlerimizle sizlere en iyi deneyimi sunuyoruz."
+      },
+      "watchVideo": "Tanıtım Videosunu İzle",
+      "readMore": "Daha Fazla",
+      "expandedTitle": "Şube İsmi"
+    },
+    "gallery": {
+      "title": "Galeri"
+    },
+    "footer": {
+      "address": "Haydar Haliyev Parkı, Uğur Mumcu Mahallesi, Ankara",
+      "follow": "Bizi Takip Edin",
+      "viewOnMaps": "Google Haritalar'da Görüntüle",
+      "copyright": "Buta Bakü Restoran | Tüm Hakları Saklıdır"
+    }
+  },
+  "az": {
+    "title": "Buta Bakı Restoran",
+    "nav": {
+      "menu": "Menyu",
+      "about": "Haqqımızda",
+      "gallery": "Qalereya",
+      "contact": "Əlaqə"
+    },
+    "alt": {
+      "logo": "Buta Bakı Loqosu"
+    },
+    "hero": {
+      "title": "Buta Bakıya Xoş Gəlmisiniz",
+      "cta": "Menyuya Bax"
+    },
+    "about": {
+      "title": "Haqqımızda",
+      "buta": {
+        "title": "Buta",
+        "description": "Ankaranın ürəyində, 100 hektarlıq yaşıl Heydər Əliyev Xatirə Parkı ərazisində yerləşən Buta Bakı Restoranı, Azərbaycan mətbəxinin unikal ləzzətlərini, mədəni zənginlikləri və seçkin atmosferi birləşdirir. Menyumuzda olan Nar Souslu Quzu, Şah Plov, Dovğa və Düşbəra Şorbası, Lülə Kebabı kimi Azərbaycanın əfsanəvi yeməklərini; yalnız mövsümündə toplanan təbii məhsullar və öz istehsal etdiyimiz zeytun yağı ilə hazırlayırıq."
+      },
+      "promo": {
+        "title": "Təşviq",
+        "description": "Buta Bakı müasir memarlığı və geniş məhsul çeşidi ilə sizə xidmət edir. Keyfiyyətli materiallar və usta işçiliyi ilə hazırlanan məhsullarımızla sizə ən yaxşı təcrübəni təqdim edirik."
+      },
+      "watchVideo": "Təşviq Videosuna Bax",
+      "readMore": "Daha Çox",
+      "expandedTitle": "Filial Adı"
+    },
+    "gallery": {
+      "title": "Qalereya"
+    },
+    "footer": {
+      "address": "Heydər Əliyev Parkı, Uğur Mumcu Məhəlləsi, Ankara",
+      "follow": "Bizi İzləyin",
+      "viewOnMaps": "Google Xəritələrdə Göstər",
+      "copyright": "Buta Bakı Restoran | Bütün Hüquqlar Qorunur"
+    }
+  },
+  "ru": {
+    "title": "Ресторан Бута Баку",
+    "nav": {
+      "menu": "Меню",
+      "about": "О нас",
+      "gallery": "Галерея",
+      "contact": "Контакты"
+    },
+    "alt": {
+      "logo": "Логотип Бута Баку"
+    },
+    "hero": {
+      "title": "Добро пожаловать в Бута Баку",
+      "cta": "Посмотреть меню"
+    },
+    "about": {
+      "title": "О нас",
+      "buta": {
+        "title": "Бута",
+        "description": "Расположенный в сердце Анкары, в 100-акровом зеленом Мемориальном парке Гейдара Алиева, ресторан «Бута Баку» объединяет уникальные вкусы азербайджанской кухни, культурные богатства и изысканную атмосферу. Мы готовим легендарные блюда Азербайджана из нашего меню, такие как Баранина в гранатовом соусе, Шах-плов, Довга и суп Дюшбара, Люля-кебаб; используя только натуральные продукты, собранные в сезон, и наше собственное оливковое масло."
+      },
+      "promo": {
+        "title": "Промо",
+        "description": "Бута Баку обслуживает вас своим современным архитектурным стилем и широким ассортиментом продукции. Мы предлагаем вам лучший опыт с нашими продуктами, приготовленными из качественных материалов с мастерским исполнением."
+      },
+      "watchVideo": "Смотреть промо-видео",
+      "readMore": "Подробнее",
+      "expandedTitle": "Название филиала"
+    },
+    "gallery": {
+      "title": "Галерея"
+    },
+    "footer": {
+      "address": "Парк Гейдара Алиева, район Угур Мумджу, Анкара",
+      "follow": "Подписывайтесь на нас",
+      "viewOnMaps": "Посмотреть на Google Картах",
+      "copyright": "Ресторан Бута Баку | Все права защищены"
+    }
+  }
+}

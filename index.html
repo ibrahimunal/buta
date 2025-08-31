@@ -24,15 +24,15 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img style="height: 100px; position:absolute; top: -5px; " src="/assets/logo/logo2.png" alt="Logo">
+      <img style="height: 100px; position:absolute; top: -5px; " src="/assets/logo/logo2.png" alt="Logo" data-i18n="alt.logo">
     </div>
     
     <!-- Desktop Navigation -->
     <nav class="desktop-nav">
-      <a href="https://butamenu.com" target="_blank">Menu</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+      <a href="https://butamenu.com" target="_blank" data-i18n="nav.menu">Menu</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <!-- Language Selector -->
@@ -55,17 +55,17 @@
   <div id="sideMenu">
     <!-- Logo -->
     <div class="menu-logo">
-      <img style="height: 75px; position:absolute; top: -5px; margin-left:5px; margin-top:8px;" src="/assets/logo/logo2.png" alt="Logo">
+      <img style="height: 75px; position:absolute; top: -5px; margin-left:5px; margin-top:8px;" src="/assets/logo/logo2.png" alt="Logo" data-i18n="alt.logo">
     </div>
   
     <!-- Close button -->
     <span class="closeBtn" onclick="closeMenu()">&times;</span>
   
     <!-- Links -->
-    <a href="https://butamenu.com" target="_blank">Menu</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="https://butamenu.com" target="_blank" data-i18n="nav.menu">Menu</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
   
   <div id="overlay" onclick="closeMenu()"></div>
@@ -73,75 +73,64 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1 id="hero-title">Welcome to Buta Baku</h1>
-      <!-- <p id="hero-subtitle">
-        Authentic flavors from Azerbaijan, right here in Ankara
-      </p> -->
-      <a href="https://butamenu.com" class="cta" id="hero-cta" target="_blank">View Menu</a>
+      <h1 id="hero-title" data-i18n="hero.title">Welcome to Buta Baku</h1>
+      <a href="https://butamenu.com" class="cta" id="hero-cta" target="_blank" data-i18n="hero.cta">View Menu</a>
     </div>
   </section>
 
 
   <!-- Promo Section - YENİ EKLENEN BÖLÜM -->
-  <section  id="about"  class="promo-section">
-    <h2>About</h2>
+
+  <!-- Promo Section -->
+  <section id="about" class="promo-section">
+    <h2 data-i18n="about.title">About</h2>
     
     <div class="promo-cards-container">
       <div class="promo-card">
-        <div class="promo-card-header">Buta</div>
+        <div class="promo-card-header" data-i18n="about.buta.title">Buta</div>
         <div class="promo-card-content">
-          <p>Ankara’nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.
-            Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan’ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. </p>
-          <button class="promo-read-more-btn" data-city="Buta">Read More</button>
+          <p data-i18n="about.buta.description">Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.
+            Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. </p>
+          <button class="promo-read-more-btn" data-city="Buta" data-i18n="about.readMore">Read More</button>
         </div>
       </div>
       
       <div class="promo-card">
-        <div class="promo-card-header">Tanıtım</div>
+        <div class="promo-card-header" data-i18n="about.promo.title">Tanıtım</div>
         <div class="promo-card-content">
-          <p>Buta Baku'nün modern mimarisi ve geniş ürün yelpazesiyle hizmetinizde. Kaliteli malzemeler ve usta işçilikle hazırlanan ürünlerimizle sizlere en iyi deneyimi sunuyoruz.</p>
+          <p data-i18n="about.promo.description">Buta Baku'nün modern mimarisi ve geniş ürün yelpazesiyle hizmetinizde. Kaliteli malzemeler ve usta işçilikle hazırlanan ürünlerimizle sizlere en iyi deneyimi sunuyoruz.</p>
           
-          <!-- Video yer tutucusu -->
+          <!-- Video placeholder -->
           <div class="video-placeholder" onclick="playVideo('Buta')" style="background-image: url('assets/carousel/2.JPG'); background-size: cover; background-position: center;">
             <div style="text-align: center; z-index: 1;">
               <i class="fas fa-play-circle"></i>
-              <div class="video-play-text">Tanıtım Videosunu İzle</div>
+              <div class="video-play-text" data-i18n="about.watchVideo">Tanıtım Videosunu İzle</div>
             </div>
           </div>       
         </div>
       </div>
 
       <div class="promo-card">
-        <div class="promo-card-header">Buta</div>
+        <div class="promo-card-header" data-i18n="about.buta.title">Buta</div>
         <div class="promo-card-content">
-          <p>Ankara’nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.
-            Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan’ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. </p>
-          <button class="promo-read-more-btn" data-city="Buta">Read More</button>
+          <p data-i18n="about.buta.description">Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.
+            Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. </p>
+          <button class="promo-read-more-btn" data-city="Buta" data-i18n="about.readMore">Read More</button>
         </div>
       </div>
-      
-      <!-- <div class="promo-card">
-        <div class="promo-card-header">Danville</div>
-        <div class="promo-card-content">
-          <p>Danville'deki şubemiz geleneksel tarifleri modern sunumlarla buluşturuyor. Özenle seçilmiş yerel ürünlerle hazırlanan menümüz, damak zevkinize hitap edecek çeşitlilikte.</p>
-          <button class="promo-read-more-btn" data-city="Danville">Read More</button>
-        </div>
-      </div> -->
     </div>
   </section>
-
   <!-- Expanded Content Overlay - YENİ EKLENEN BÖLÜM -->
   <div class="promo-overlay" id="promoOverlay">
     <div class="promo-expanded-content">
       <span class="promo-close-btn">&times;</span>
-      <h2 id="promoExpandedTitle">Şube İsmi</h2>
+      <h2 id="promoExpandedTitle" data-i18n="about.expandedTitle">Şube İsmi</h2>
       <div id="promoExpandedText">
         <!-- Content will be inserted by JavaScript -->
       </div>
     </div>
   </div>
-  <h2 id="gallery-title" style="text-align: center; margin-bottom: 30px;">Gallery</h2>
-
+  <h2 id="gallery-title" style="text-align: center; margin-bottom: 30px;" data-i18n="gallery.title">Gallery</h2>
   <!-- Gallery Section -->
   <section id="gallery" class="section">
 
@@ -202,13 +191,13 @@
     </div>
   </section>
 
-  <footer  id="contact" style="background-color: #D9CAAD; color: #595347; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
+  <footer id="contact" style="background-color: #D9CAAD; color: #595347; padding: 40px 20px; font-family: 'Montserrat', sans-serif;">
     <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: center;">
 
       <!-- Logo / Icon Section -->
       <div class="footer-logo" style="flex: 1; min-width: 250px; display: flex; align-items: center; gap: 20px; justify-content: center;">
         <div>
-          <img src="assets/logo/logo2.png" alt="Buta Baku Logo" style="width: 190px; display: block;">
+          <img src="assets/logo/logo2.png" alt="Buta Baku Logo" data-i18n="alt.logo" style="width: 190px; display: block;">
         </div>
       </div>
 
@@ -222,12 +211,15 @@
           <i class="fas fa-phone-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> 
           <a href="tel:+905551443020" style="color: #595347; text-decoration: none;">+90 555 144 30 20</a>
         </p>     
-        <p style="margin: 5px 0; display: flex;"><i class="fas fa-map-marker-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> Haydar Haliyev Parkı, Uğur Mumcu Mahallesi, Ankara</p>
+        <p style="margin: 5px 0; display: flex;">
+          <i class="fas fa-map-marker-alt" style="color: #595347; font-size: 20px; margin-right: 10px;"></i> 
+          <span data-i18n="footer.address">Haydar Haliyev Parkı, Uğur Mumcu Mahallesi, Ankara</span>
+        </p>
       </div>
 
       <!-- Social Media & Google Maps Section -->
       <div class="footer-social" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center;">
-        <p style="margin-bottom: 10px; font-weight: 600;">Follow Us</p>
+        <p style="margin-bottom: 10px; font-weight: 600;" data-i18n="footer.follow">Follow Us</p>
         <div style="display: flex; gap: 15px; margin-bottom: 10px;">
           <a href="https://www.instagram.com/butabakuankara/" target="_blank" style="color: #595347; text-decoration: none;">
             <i class="fab fa-instagram" style="font-size: 24px;"></i>
@@ -237,39 +229,17 @@
           </a>
         </div>
         <a href="https://www.google.com/maps/place/Haydar+Haliyev+Park%C4%B1,+U%C4%9Fur+Mmucu+Mahallesi,+06370+Yenimahalle,+Ankara,+T%C3%BCrkiye" target="_blank" style="color: #595347; text-decoration: none; font-size: 14px; display: flex; align-items: center;">
-          <i class="fas fa-map-marked-alt" style="color: #595347; font-size: 20px; margin-right: 5px;"></i> Google Haritalar'da Görüntüle
+          <i class="fas fa-map-marked-alt" style="color: #595347; font-size: 20px; margin-right: 5px;"></i> 
+          <span data-i18n="footer.viewOnMaps">Google Haritalar'da Görüntüle</span>
         </a>
       </div>
-
     </div>
 
     <!-- Copyright -->
     <div id="copyright" style="text-align: center; margin-top: 30px; font-size: 12px; font-weight: 300;">
-      &copy; <span id="year"></span> Buta Baku Restaurant | Tüm Hakları Saklıdır
+      &copy; <span id="year"></span> <span data-i18n="footer.copyright">Buta Baku Restaurant | Tüm Hakları Saklıdır</span>
     </div>
-
-    <style>
-      /* Responsive Footer */
-      @media (max-width: 768px) {
-        .footer-container {
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-        }
-        .footer-logo,
-        .footer-contact,
-        .footer-social {
-          text-align: center;
-          align-items: center;
-        }
-        .footer-contact p,
-        .footer-social a {
-          justify-content: center;
-        }
-      }
-    </style>
   </footer>
-
 
 </body>
 <script src="./script.js"></script>

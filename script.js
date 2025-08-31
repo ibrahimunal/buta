@@ -36,113 +36,60 @@ function closeMenu() {
 }
 
 // Language translations
-const translations = {
-  en: {
-    heroTitle: "Welcome to Buta Baku",
-    heroSubtitle: "Authentic flavors from Azerbaijan, right here in Ankara",
-    heroCta: "View Menu",
-    aboutTitle: "About Us",
-    aboutText: "We bring the rich culinary traditions of Azerbaijan to Ankara. Fresh ingredients, authentic flavors, and a warm atmosphere await you.",
-    galleryTitle: "Gallery",
-    contactTitle: "Contact Us",
-    contactAddress: "Address: Cinnah Caddesi No:37, Ankara, Turkey",
-    contactPhone: "Phone: +90 312 466 05 05",
-    contactEmail: "Email: info@butabaku.com",
-    locationsTitle: "Our Locations",
-    pleasantonTitle: "Buta",
-    livermoreTitle: "Livermore",
-    danvilleTitle: "Danville",
-    pleasantonText: "Our Buta branch serves you with its modern architecture and wide product range. We offer you the best experience with our products prepared with quality materials and master craftsmanship.",
-    livermoreText: "Our Livermore location stands out with natural materials and handmade products. We aim to provide our guests with an unforgettable taste experience in a warm and friendly atmosphere.",
-    danvilleText: "Our branch in Danville brings together traditional recipes with modern presentations. Our menu, prepared with carefully selected local products, offers a variety that will appeal to your palate.",
-    readMore: "Read More"
-  },
-  tr: {
-    heroTitle: "Buta Baku'ya Hoş Geldiniz",
-    heroSubtitle: "Azerbaycan'ın özgün lezzetleri, Ankara'da sizlerle",
-    heroCta: "Menüyü Gör",
-    aboutTitle: "Hakkımızda",
-    aboutText: "Buta Baku Restoran olarak Azerbaycan’ın zengin mutfak geleneklerini Ankara'ya taşıyoruz. Taze malzemeler, otantik lezzetler ve sıcak bir atmosfer sizi bekliyor.",
-    galleryTitle: "Galeri",
-    contactTitle: "İletişim",
-    contactAddress: "Adres: Cinnah Caddesi No:37, Ankara, Türkiye",
-    contactPhone: "Telefon: +90 312 466 05 05",
-    contactEmail: "E-posta: info@butabaku.com",
-    locationsTitle: "Lokasyonlarımız",
-    pleasantonTitle: "Pleasanton",
-    livermoreTitle: "Livermore",
-    danvilleTitle: "Danville",
-    pleasantonText: "Pleasanton şubemiz modern mimarisi ve geniş ürün yelpazesiyle hizmetinizde. Kaliteli malzemeler ve usta işçilikle hazırlanan ürünlerimizle sizlere en iyi deneyimi sunuyoruz.",
-    livermoreText: "Livermore lokasyonumuz doğal malzemeler ve el yapımı ürünleriyle öne çıkıyor. Misafirlerimize sıcak ve samimi bir atmosferde unutulmaz bir lezzet deneyimi yaşatmayı hedefliyoruz.",
-    danvilleText: "Danville'deki şubemiz geleneksel tarifleri modern sunumlarla buluşturuyor. Özenle seçilmiş yerel ürünlerle hazırlanan menümüz, damak zevkinize hitap edecek çeşitlilikte.",
-    readMore: "Daha Fazla"
-  },
-  az: {
-    heroTitle: "Buta Baku'ya Xoş Gəlmisiniz",
-    heroSubtitle: "Azərbaycanın orijinal dadları, Ankarada sizlər üçün",
-    heroCta: "Menüyü Bax",
-    aboutTitle: "Haqqımızda",
-    aboutText: "Buta Baku Restoranı olaraq Azərbaycan mətbəxinin zəngin ənənələrini Ankaraya gətiririk. Təzə məhsullar, orijinal dadlar və isti atmosfer sizi gözləyir.",
-    galleryTitle: "Qalereya",
-    contactTitle: "Əlaqə",
-    contactAddress: "Ünvan: Cinnah Caddesi No:37, Ankara, Türkiyə",
-    contactPhone: "Telefon: +90 312 466 05 05",
-    contactEmail: "E-poçt: info@butabaku.com",
-    locationsTitle: "Məkanlarımız",
-    pleasantonTitle: "Pleasanton",
-    livermoreTitle: "Livermore",
-    danvilleTitle: "Danville",
-    pleasantonText: "Pleasanton filialımız müasir memarlığı və geniş məhsul çeşidi ilə xidmətinizdədir. Keyfiyyətli materiallar və usta işçiliyi ilə hazırlanan məhsullarımızla sizə ən yaxşı təcrübəni təqdim edirik.",
-    livermoreText: "Livermore məkanımız təbii materiallar və əl işi məhsulları ilə fərqlənir. Qonaqlarımıza isti və rəhmli bir mühitdə unudulmaz bir ləzzət təcrübəsi yaşatmağı hədəfləyirik.",
-    danvilleText: "Danville'dəki filialımız ənənəvi reseptləri müasir təqdimatlarla birləşdirir. Diqqətlə seçilmiş yerli məhsullarla hazırlanan menyumuz, damaq zövqünüzə hitab edəcək müxtəliflik təklif edir.",
-    readMore: "Daha Çox"
-  },
-  ru: {
-    heroTitle: "Добро пожаловать в Buta Baku",
-    heroSubtitle: "Аутентичные блюда Азербайджана прямо здесь, в Анкаре",
-    heroCta: "Посмотреть меню",
-    aboutTitle: "О нас",
-    aboutText: "В ресторане Buta Baku мы привносим богатые кулинарные традиции Азербайджана в Анкару. Свежие ингредиенты, аутентичные вкусы и уютная атмосфера ждут вас.",
-    galleryTitle: "Галерея",
-    contactTitle: "Контакты",
-    contactAddress: "Адрес: Cinnah Caddesi No:37, Анкара, Турция",
-    contactPhone: "Телефон: +90 312 466 05 05",
-    contactEmail: "Эл. почта: info@butabaku.com",
-    locationsTitle: "Наши Локации",
-    pleasantonTitle: "Плезантон",
-    livermoreTitle: "Ливермор",
-    danvilleTitle: "Дэнвилл",
-    pleasantonText: "Наш филиал в Плезантоне обслуживает вас своим современным архитектурным стилем и широким ассортиментом продукции. Мы предлагаем вам лучший опыт с нашими продуктами, приготовленными из качественных материалов с мастерским исполнением.",
-    livermoreText: "Наше заведение в Ливерморе выделяется натуральными материалами и изделиями ручной работы. Мы стремимся предоставить нашим гостям незабываемые вкусовые ощущения в теплой и дружеской атмосфере.",
-    danvilleText: "Наш филиал в Дэнвилле сочетает традиционные рецепты с современной подачей. Наше меню, приготовленное из тщательно отобранных местных продуктов, предлагает разнообразие, которое понравится вашему вкусу.",
-    readMore: "Подробнее"
-  }
-};
+var translations;
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+let currentLang = "tr"; // default
+
+// Load JSON file
+fetch("./translations.json")
+  .then(res => res.json())
+  .then(data => {
+    translations = data;
+    console.log(translations);
+    changeLanguage(currentLang); // set default language
+  });
+
 // Change language function
 function changeLanguage(lang) {
-  const t = translations[lang];
-  document.getElementById("hero-title").textContent = t.heroTitle;
-  // document.getElementById("hero-subtitle").textContent = t.heroSubtitle;
-  document.getElementById("hero-cta").textContent = t.heroCta;
-  document.getElementById("about-title").textContent = t.aboutTitle;
-  document.getElementById("about-text").textContent = t.aboutText;
-  document.getElementById("gallery-title").textContent = t.galleryTitle;
-  
-  // Yeni eklenen çeviriler
-  document.querySelector(".promo-section h2").textContent = t.locationsTitle;
-  document.querySelectorAll(".promo-card-header")[0].textContent = t.pleasantonTitle;
-  document.querySelectorAll(".promo-card-header")[1].textContent = t.livermoreTitle;
-  document.querySelectorAll(".promo-card-header")[2].textContent = t.danvilleTitle;
-  document.querySelectorAll(".promo-card-content p")[0].textContent = t.pleasantonText;
-  document.querySelectorAll(".promo-card-content p")[1].textContent = t.livermoreText;
-  document.querySelectorAll(".promo-card-content p")[2].textContent = t.danvilleText;
-  document.querySelectorAll(".promo-read-more-btn").forEach(btn => {
-    btn.textContent = t.readMore;
+  currentLang = lang;
+  const t = translations[lang]; // translations should be an object
+
+  if (!t) {
+    console.warn(`No translations found for language: ${lang}`);
+    return;
+  }
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const path = el.getAttribute("data-i18n"); // e.g., "nav.menu"
+    const keys = path.split(".");
+    let text = t;
+
+    for (let key of keys) {
+      if (text && text[key] !== undefined) {
+        text = text[key];
+      } else {
+        console.warn(`Missing translation for: ${path}`);
+        text = null;
+        break;
+      }
+    }
+
+    if (!text) return;
+
+    // Set textContent or attributes
+    if (path.includes("alt")) {
+      el.setAttribute("alt", text);
+    } else if (path.includes("placeholder")) {
+      el.setAttribute("placeholder", text);
+    } else {
+      el.textContent = text;
+    }
   });
 }
+
+
 
 // Promo Cards Functionality - YENİ EKLENEN KOD
 document.addEventListener('DOMContentLoaded', function() {
@@ -346,7 +293,7 @@ document.addEventListener('keydown', function(e) {
 // contentData'yı güncelleyin
 const contentData = {
   'Buta': {
-    title: 'Buta Bakü',
+    title: 'Buta ',
     content: `
 <p>Ankara’nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.</p>
 <p>Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan’ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. Bu unutulmaz yolculuğu ise sadece bizde bulabileceğiniz Buta Ballı ve Bakü Baklavası gibi özel tatlılarla taçlandırıyoruz. Her lokma, şeflerimizin incelikli dokunuşlarıyla damaklarda iz bırakıyor.</p>
@@ -394,3 +341,15 @@ document.addEventListener('keydown', function(e) {
     }
   }
 });
+
+document.querySelectorAll("#sideMenu a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+  }
+});
+
