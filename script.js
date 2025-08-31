@@ -272,23 +272,90 @@ function stopVideo() {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const readMoreBtns = document.querySelectorAll('.promo-read-more-btn');
+  const overlay = document.getElementById('promoOverlay');
+  const closeBtn = document.querySelector('.promo-close-btn');
+  const expandedTitle = document.getElementById('promoExpandedTitle');
+  const expandedText = document.getElementById('promoExpandedText');
+  
+  if (!readMoreBtns.length || !overlay || !closeBtn || !expandedTitle || !expandedText) return;
+  
+  // Read More butonlarına tıklama olayı ekle
+  readMoreBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const city = this.getAttribute('data-city');
+      expandedTitle.textContent = contentData[city].title;
+      
+      // Önceki video varsa durdur
+      stopVideo();
+      
+      // Eğer video varsa, video içeriğini göster
+      if (contentData[city].hasVideo) {
+        expandedText.innerHTML = contentData[city].content;
+        
+        // Video elementini kaydet
+        setTimeout(() => {
+          const video = expandedText.querySelector('video');
+          if (video) {
+            currentVideoElement = video;
+            
+            // Video sona erdiğinde değişkeni temizle
+            video.onended = function() {
+              currentVideoElement = null;
+            };
+          }
+        }, 100);
+      } else {
+        expandedText.innerHTML = contentData[city].content;
+      }
+      
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  // Overlay'i kapat ve videoyu durdur
+  closeBtn.addEventListener('click', function() {
+    stopVideo();
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+  
+  // Overlay dışına tıklanınca kapat ve videoyu durdur
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) {
+      stopVideo();
+      overlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
+});
+
+// ESC tuşuyla kapatma ve videoyu durdurma
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const overlay = document.getElementById('promoOverlay');
+    if (overlay && overlay.style.display === 'flex') {
+      stopVideo();
+      overlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  }
+});
 // contentData'yı güncelleyin
 const contentData = {
   'Buta': {
-    title: 'Buta Bakü Restoran',
+    title: 'Buta Bakü',
     content: `
-      <div class="video-container">
-        <video controls style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="assets/video/buta.mp4" type="video/mp4">
-          Tarayıcınız video oynatmayı desteklemiyor.
-        </video>
-      </div>
-      <p>Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.</p>
-      <p>Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. Bu unutulmaz yolculuğu ise sadece bizde bulabileceğiniz Buta Ballı ve Bakü Baklavası gibi özel tatlılarla taçlandırıyoruz. Her lokma, şeflerimizin incelikli dokunuşlarıyla damaklarda iz bırakıyor.</p>
-      <p>Seçkin şarap kavımız, yerel kadın üreticilerin emekleriyle üretilen özel şaraplardan ve Türkiye'nin saygın bağlarının seçkin etiketlerinden oluşuyor. Bunun yanında, Azerbaycan Savalan şarap serisini de yalnızca Buta Bakü kavında bulabilirsiniz. Bu ayrıcalıklı lezzetleri, özenle hazırlanmış imza kokteyllerimizle birlikte şömine başında deneyimleyebilir, kendinizi unutulmaz bir atmosferin içinde bulabilirsiniz.</p>
-      <p>Buta Bakü sadece bir restoran değil, kültür ve zarafetin buluşma noktasıdır. Geleneksel müziklerden sanat etkinliklerine, film gösterimlerinden kültürel seminerlere uzanan programlarımızla, her ziyareti benzersiz kılıyoruz.</p>
-      <p>Şehrin kalabalığından uzak, doğanın ortasında, şöminenin sıcaklığı ve parkın dinginliği eşliğinde; Azerbaycan kültürünün sofistike dokunuşlarıyla tanışmaya davetlisiniz.</p>
-      <p>Buta Bakü Restoran – Damaklarda, ruhlarda ve hafızalarda iz bırakan bir deneyim.</p>
+<p>Ankara’nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor.</p>
+<p>Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan’ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz. Bu unutulmaz yolculuğu ise sadece bizde bulabileceğiniz Buta Ballı ve Bakü Baklavası gibi özel tatlılarla taçlandırıyoruz. Her lokma, şeflerimizin incelikli dokunuşlarıyla damaklarda iz bırakıyor.</p>
+<p>Seçkin şarap kavımız, yerel kadın üreticilerin emekleriyle üretilen özel şaraplardan ve Türkiye’nin saygın bağlarının seçkin etiketlerinden oluşuyor. Bunun yanında, Azerbaycan Savalan şarap serisini de yalnızca Buta Bakü kavında bulabilirsiniz. Bu ayrıcalıklı lezzetleri, özenle hazırlanmış imza kokteyllerimizle birlikte şömine başında deneyimleyebilir, kendinizi unutulmaz bir atmosferin içinde bulabilirsiniz.</p>
+<p>Buta Bakü sadece bir restoran değil, kültür ve zarafetin buluşma noktasıdır. Geleneksel müziklerden sanat etkinliklerine, film gösterimlerinden kültürel seminerlere uzanan programlarımızla, her ziyareti benzersiz kılıyoruz.</p>
+<p>Şehrin kalabalığından uzak, doğanın ortasında, şöminenin sıcaklığı ve parkın dinginliği eşliğinde; Azerbaycan kültürünün sofistike dokunuşlarıyla tanışmaya davetlisiniz.</p>
+<p>Buta Bakü Restoran – Damaklarda, ruhlarda ve hafızalarda iz bırakan bir deneyim.</p>
+
+      
     `,
     hasVideo: true
   },
@@ -315,63 +382,6 @@ const contentData = {
     hasVideo: false
   }
 };
-
-// DOM yüklendikten sonra çalışacak fonksiyon
-document.addEventListener('DOMContentLoaded', function() {
-  const readMoreBtns = document.querySelectorAll('.promo-read-more-btn');
-  const overlay = document.getElementById('promoOverlay');
-  const closeBtn = document.querySelector('.promo-close-btn');
-  const expandedTitle = document.getElementById('promoExpandedTitle');
-  const expandedText = document.getElementById('promoExpandedText');
-  
-  if (!readMoreBtns.length || !overlay || !closeBtn || !expandedTitle || !expandedText) return;
-  
-  // Read More butonlarına tıklama olayı ekle
-  readMoreBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const city = this.getAttribute('data-city');
-      expandedTitle.textContent = contentData[city].title;
-      
-      // Önceki video varsa durdur
-      stopVideo();
-      
-      // İçeriği göster
-      expandedText.innerHTML = contentData[city].content;
-      
-      // Video elementini kaydet (eğer video varsa)
-      setTimeout(() => {
-        const video = expandedText.querySelector('video');
-        if (video) {
-          currentVideoElement = video;
-          
-          // Video sona erdiğinde değişkeni temizle
-          video.onended = function() {
-            currentVideoElement = null;
-          };
-        }
-      }, 100);
-      
-      overlay.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    });
-  });
-  
-  // Overlay'i kapat ve videoyu durdur
-  closeBtn.addEventListener('click', function() {
-    stopVideo();
-    overlay.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  });
-  
-  // Overlay dışına tıklanınca kapat ve videoyu durdur
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) {
-      stopVideo();
-      overlay.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  });
-});
 
 // ESC tuşuyla kapatma ve videoyu durdurma
 document.addEventListener('keydown', function(e) {
