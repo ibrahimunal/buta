@@ -219,6 +219,7 @@ function stopVideo() {
   }
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
   const readMoreBtns = document.querySelectorAll('.promo-read-more-btn');
   const overlay = document.getElementById('promoOverlay');
