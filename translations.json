@@ -17,16 +17,18 @@
     "about": {
       "title": "About",
       "buta": {
-        "title": "Buta",
-        "description": "Located in the heart of Ankara, within the 100-acre green Haydar Aliyev Memorial Park, Buta Baku Restaurant brings together the unique flavors of Azerbaijani cuisine, cultural riches, and an exclusive atmosphere. We prepare Azerbaijan's legendary dishes on our menu, such as Pomegranate Glazed Lamb, Shah Pilaf, Dovga and Dushbara Soup, Lule Kebab; using only natural products collected in season and our own produced olive oil."
+        "title": "About Us",
+        "description": "Located in the heart of Ankara, within the 100-acre green Haydar Aliyev Memorial Park, Buta Baku Restaurant brings together the unique flavors of Azerbaijani cuisine, cultural riches, and an exclusive atmosphere. We prepare Azerbaijan's legendary dishes on our menu, such as Pomegranate Glazed Lamb, Shah Pilaf, Dovga and Dushbara Soup, Lule Kebab; using only natural products collected in season and our own produced olive oil.",
+        "story":"Buta Baku isn't just a restaurant; it's a sanctuary of culture and elegance, a place far from Azerbaijan but a place where you can feel right at home. Our program, filled with the magic of traditional music, inspiring artistic events, film screenings, and cultural seminars, transforms every visit into an unforgettable memory."
       },
       "promo": {
-        "title": "Promotion",
+        "title": "Buta",
         "description": "Buta Baku serves you with its modern architecture and wide product range. We offer you the best experience with our products prepared with quality materials and master craftsmanship."
       },
       "watchVideo": "Watch Promo Video",
       "readMore": "Read More",
-      "expandedTitle": "Branch Name"
+      "expandedTitle": "Branch Name",
+      "out-story":"Experience"
     },
     "gallery": {
       "title": "Gallery"
@@ -56,16 +58,19 @@
     "about": {
       "title": "Hakkımızda",
       "buta": {
-        "title": "Buta",
-        "description": "Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor. Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz."
+        "title": "Hakkımızda",
+        "description": "Ankara'nın kalbinde, 100 dönümlük yemyeşil Haydar Aliyev Anıt Parkı içerisinde konumlanan Buta Bakü Restoran, Azerbaycan mutfağının eşsiz lezzetlerini, kültürel zenginlikleri ve seçkin bir atmosferi bir araya getiriyor. Menümüzde yer alan Nar Soslu Kuzu, Şah Pilavı, Dovga ve Düşbere Çorbası, Lüle Kebabı gibi Azerbaycan'ın dillere destan yemeklerini; yalnızca mevsiminde toplanan doğal ürünler ve kendi ürettiğimiz zeytinyağıyla hazırlıyoruz.",
+        "story":"Buta Bakü, sadece bir restoran değil; Azerbaycan’dan uzakta, ama adeta evinizdeymiş gibi hissedebileceğiniz bir kültür ve zarafet mabedidir. Geleneksel müziklerin büyüsü, sanat etkinliklerinin ilhamı, film gösterimleri ve kültürel seminerlerle dolu programlarımız, her ziyareti unutulmaz bir anıya dönüştürüyor.."
       },
       "promo": {
-        "title": "Tanıtım",
+        "title": "Buta",
         "description": "Buta Baku'nün modern mimarisi ve geniş ürün yelpazesiyle hizmetinizde. Kaliteli malzemeler ve usta işçilikle hazırlanan ürünlerimizle sizlere en iyi deneyimi sunuyoruz."
       },
       "watchVideo": "Tanıtım Videosunu İzle",
       "readMore": "Daha Fazla",
-      "expandedTitle": "Şube İsmi"
+      "expandedTitle": "Şube İsmi",
+      "out-story":"Deneyim"
+
     },
     "gallery": {
       "title": "Galeri"
@@ -95,16 +100,20 @@
     "about": {
       "title": "Haqqımızda",
       "buta": {
-        "title": "Buta",
-        "description": "Ankaranın ürəyində, 100 hektarlıq yaşıl Heydər Əliyev Xatirə Parkı ərazisində yerləşən Buta Bakı Restoranı, Azərbaycan mətbəxinin unikal ləzzətlərini, mədəni zənginlikləri və seçkin atmosferi birləşdirir. Menyumuzda olan Nar Souslu Quzu, Şah Plov, Dovğa və Düşbəra Şorbası, Lülə Kebabı kimi Azərbaycanın əfsanəvi yeməklərini; yalnız mövsümündə toplanan təbii məhsullar və öz istehsal etdiyimiz zeytun yağı ilə hazırlayırıq."
+        "title": "Haqqımızda",
+        "description": "Ankaranın ürəyində, 100 hektarlıq yaşıl Heydər Əliyev Xatirə Parkı ərazisində yerləşən Buta Bakı Restoranı, Azərbaycan mətbəxinin unikal ləzzətlərini, mədəni zənginlikləri və seçkin atmosferi birləşdirir. Menyumuzda olan Nar Souslu Quzu, Şah Plov, Dovğa və Düşbəra Şorbası, Lülə Kebabı kimi Azərbaycanın əfsanəvi yeməklərini; yalnız mövsümündə toplanan təbii məhsullar və öz istehsal etdiyimiz zeytun yağı ilə hazırlayırıq.",
+        "story":"Buta Baku sadəcə bir restoran deyil; mədəniyyət və zəriflik ziyarətgahıdır, Azərbaycandan uzaqda olsa da, özünüzü evdəki kimi hiss edə biləcəyiniz bir yerdir. Ənənəvi musiqinin sehri, ruhlandırıcı bədii tədbirlər, film nümayişləri və mədəni seminarlarla dolu proqramımız hər səfəri unudulmaz xatirəyə çevirir."
+
       },
       "promo": {
-        "title": "Təşviq",
+        "title": "Buta",
         "description": "Buta Bakı müasir memarlığı və geniş məhsul çeşidi ilə sizə xidmət edir. Keyfiyyətli materiallar və usta işçiliyi ilə hazırlanan məhsullarımızla sizə ən yaxşı təcrübəni təqdim edirik."
       },
       "watchVideo": "Təşviq Videosuna Bax",
       "readMore": "Daha Çox",
-      "expandedTitle": "Filial Adı"
+      "expandedTitle": "Filial Adı",
+      "out-story":"Təcrübə"
+
     },
     "gallery": {
       "title": "Qalereya"
@@ -134,16 +143,19 @@
     "about": {
       "title": "О нас",
       "buta": {
-        "title": "Бута",
-        "description": "Расположенный в сердце Анкары, в 100-акровом зеленом Мемориальном парке Гейдара Алиева, ресторан «Бута Баку» объединяет уникальные вкусы азербайджанской кухни, культурные богатства и изысканную атмосферу. Мы готовим легендарные блюда Азербайджана из нашего меню, такие как Баранина в гранатовом соусе, Шах-плов, Довга и суп Дюшбара, Люля-кебаб; используя только натуральные продукты, собранные в сезон, и наше собственное оливковое масло."
+        "title": "О нас",
+        "description": "Расположенный в сердце Анкары, в 100-акровом зеленом Мемориальном парке Гейдара Алиева, ресторан «Бута Баку» объединяет уникальные вкусы азербайджанской кухни, культурные богатства и изысканную атмосферу. Мы готовим легендарные блюда Азербайджана из нашего меню, такие как Баранина в гранатовом соусе, Шах-плов, Довга и суп Дюшбара, Люля-кебаб; используя только натуральные продукты, собранные в сезон, и наше собственное оливковое масло.",
+        "story":"Buta Baku — это не просто ресторан, это настоящий храм культуры и элегантности, место, далёкое от Азербайджана, но где чувствуешь себя как дома. Наша программа, наполненная волшебством традиционной музыки, вдохновляющими художественными мероприятиями, кинопоказами и культурными семинарами, превращает каждый визит в незабываемое воспоминание."
+
       },
       "promo": {
-        "title": "Промо",
+        "title": "Buta",
         "description": "Бута Баку обслуживает вас своим современным архитектурным стилем и широким ассортиментом продукции. Мы предлагаем вам лучший опыт с нашими продуктами, приготовленными из качественных материалов с мастерским исполнением."
       },
       "watchVideo": "Смотреть промо-видео",
       "readMore": "Подробнее",
-      "expandedTitle": "Название филиала"
+      "expandedTitle": "Название филиала",
+      "out-story":"Опыт"
     },
     "gallery": {
       "title": "Галерея"
