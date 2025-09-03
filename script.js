@@ -411,17 +411,20 @@ window.addEventListener("load", () => {
 document.querySelectorAll(".menu-link").forEach(el => {
   el.addEventListener("click", async () => {
     try {
+      var wholeUrl;
       const response = await fetch("tr/");
       const text = await response.text();
 
       const match = text.match(/href=['"]?([^"' ]+\.pdf)/i);
-
+      const baseUrl = window.location.origin
       if (match && match[1]) {
         let pdfUrl = match[1];
-        if (!pdfUrl.startsWith("tr/") && !pdfUrl.startsWith("/tr/")) {
-          pdfUrl = "tr/" + pdfUrl;
-        }
-        window.open(pdfUrl, "_blank");
+        wholeUrl = baseUrl +pdfUrl;
+        // if (!pdfUrl.startsWith("/tr") && !pdfUrl.startsWith("/tr/")) {
+        //   pdfUrl = "tr/" + pdfUrl;
+        //   wholeUrl = baseUrl + "/" +pdfUrl;
+        // }
+        window.open(wholeUrl, "_blank");
       } else {
         alert("No PDF file found in the 'tr' folder.");
       }
