@@ -409,27 +409,11 @@ window.addEventListener("load", () => {
 
 
 document.querySelectorAll(".menu-link").forEach(el => {
-  el.addEventListener("click", async () => {
-    try {
-      var wholeUrl;
-      const response = await fetch("tr/");
-      const text = await response.text();
-
-      const match = text.match(/href=['"]?([^"' ]+\.pdf)/i);
-      const baseUrl = window.location.origin
-      if (match && match[1]) {
-        let pdfUrl = match[1];
-        wholeUrl = baseUrl +pdfUrl;
-        // if (!pdfUrl.startsWith("/tr") && !pdfUrl.startsWith("/tr/")) {
-        //   pdfUrl = "tr/" + pdfUrl;
-        //   wholeUrl = baseUrl + "/" +pdfUrl;
-        // }
-        window.open(wholeUrl, "_blank");
-      } else {
-        alert("No PDF file found in the 'tr' folder.");
-      }
-    } catch (err) {
-      console.error("Error fetching PDF:", err);
-    }
+  el.addEventListener("click", () => {
+    // Example: currentLang can be 'tr', 'en', 'ru', 'az'
+    currentLang  =  (currentLang != undefined || currentLang != null) ? currentLang : 'tr';
+    const pdfUrl = `${window.location.origin}/${currentLang}/menu.pdf`;
+    window.open(pdfUrl, "_blank");
   });
 });
+
